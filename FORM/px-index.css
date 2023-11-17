@@ -1,0 +1,48 @@
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  background-color: #f5f5dc;
+  box-shadow: 5px 0px 9px #f0e68c;
+}
+
+form {
+  margin-left: 236px;
+  margin-top: 20px;
+}
+
+.signature-pad {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 755px;
+  height: 120px;
+  border: solid 1px;
+  background-color: white;
+}
+
+.wrapper {
+  position: relative;
+  width: 250px;
+  height: 107px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+p {
+  margin-top: 50px;
+}
+
+h1 {
+  text-align: center;
+}
+
+details {
+  margin-left: 236px;
+}
+
+div {
+  margin-left: 236px;
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <style>
+      input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid black;
+      }
+
+      .image {
+        width: 230px;
+        margin-left: 700px;
+        margin-top: -259px;
+        border: solid 2px #858585;
+        border-radius: 0% 40% 0 40%;
+        display: inline-block;
+        position: absolute;
+      }
+
+      .aida {
+        width: 230px;
+        height: 230px;
+        left: -220px;
+        margin-top: -259px;
+        border: solid 2px #858585;
+        border-radius: 300px;
+        display: inline-block;
+        position: absolute;
+      }
+
+      .titulo {
+        display: inline-block;
+        position: absolute;
+        margin-left: 220px;
+        margin-top: -250px;
+        font-size: 20px;
+        color: goldenrod;
+        text-shadow: 7px 7px 7px gray;
+      }
+
+      h3 {
+        display: inline-block;
+        position: absolute;
+        margin-left: 443px;
+        margin-top: 200px;
+        font-size: 30px;
+      }
+
+      .titulo1 {
+        display: inline-block;
+        position: absolute;
+        margin-left: -200px;
+        margin-top: -300px;
+        color: black;
+        text-shadow: 6px 6px 6px gray;
+      }
+
+      .titulo2 {
+        display: inline-block;
+        position: absolute;
+        margin-left: 222px;
+        margin-top: -200px;
+        color: chocolate;
+        text-shadow: 6px 6px 6px gray;
+      }
+
+      .form {
+        display: inline-block;
+        position: absolute;
+        margin-top: 280px;
+        margin-left: 249px;
+      }
+
+      .radio {
+        font-size: 20px;
+      }
+
+      .date {
+        width: 20%;
+      }
+
+      #curso,
+      #name,
+      #cep,
+      #rua,
+      #bairro,
+      #cidade,
+      #estado,
+      #email,
+      #text {
+        width: 600px;
+      }
+
+      .next {
+        display: inline-block;
+        position: absolute;
+        margin-top: 1600px;
+        margin-left: 500px;
+      }
+
+      body {
+        background-image: url("./papel-de-parede-para-banheiro-calacata-marmore-padrao.jpg");
+      }
+    </style>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário Aida Camila Teste</title>
+  </head>
+  <body>
+    <form
+      action="https://formsubmit.co/amanciojr.144@gmail.com"
+      method="post"
+      class="form"
+    >
+      <figure>
+        <figcaption>
+          <img class="image" src="./IMG-20230726-WA0039.jpg" alt="" />
+
+          <img class="aida" src="./IMG-20230908-WA0100.jpg" alt="" />
+        </figcaption>
+      </figure>
+
+      <div class="titulo"><h1>Dra. Aida Camila</h1></div>
+      <div class="titulo1"><h3>FICHA DO PACIENTE</h3></div>
+      <div class="titulo2"><h5>CRO9494</h5></div>
+
+      <br /><label for="name">Curso:</label><br />
+      <input
+        type="text"
+        id="curso"
+        name="usuario_curso"
+        placeholder="curso"
+        disabled
+      /><br /><br />
+      <label for="date">Data:</label> <br />
+      <input type="date" class="date" /><br /><br />
+      <br /><label for="name">Nome:</label><br />
+      <input
+        type="text"
+        id="name"
+        name="usuario_nome"
+        placeholder="Nome e Sobrenome"
+        required
+      /><br />
+      <br /><label for="cep">Logradouro Cep:</label><br />
+      <input type="text" id="cep" name="cep" required />
+      <br /><label for="rua">Rua:</label><br />
+      <input type="text" id="rua" name="rua" />
+      <br /><label for="bairro">Bairro</label><br />
+      <input type="text" id="bairro" name="bairro" />
+      <br /><label for="cidade">Cidade</label><br />
+      <input type="text" id="cidade" name="cidade" />
+      <br /><label for="estado">Estado</label><br />
+      <input type="text" id="estado" name="estado" /><br />
+      <br /><label for="date">Data de Nascimento</label>
+      <input name="date" type="date" class="date" required />
+      &nbsp; &nbsp; &nbsp; &nbsp;<label for="genero">Gênero</label>
+      <select name="genero" name="genero" id="genero" required>
+        <option value="selecione">Selecione</option>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <option value="outros">Outros</option></select
+      ><br />
+      <br /><label for="tel">Telefone</label><br />
+      <input
+        type="tel"
+        name="tel"
+        id="tel"
+        placeholder="(81)9.9999-9999"
+        required
+      />
+      <br /><br /><label for="email">Email:</label><br />
+      <input
+        type="text"
+        id="email"
+        name="usuario_email"
+        placeholder="abc@email.com"
+        required
+      />
+      <br />
+      <br />
+      <label for="RG">RG:</label>
+      <input name="RG" type="number" id="RG" required />
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<label for="CPF">CPF:</label>
+      <input type="number" id="CPF" required /><br />
+
+      <br /><br /><label for="message">Mensagem</label> <br /><textarea
+        name="message"
+        id="message"
+        name="usuario_msg"
+        cols="100"
+        rows="10"
+        placeholder="Digite sua mensagem"
+      ></textarea>
+      <input
+        type="hidden"
+        name="_next"
+        value="https://junior-amancio.blogspot.com/obrigado/obrigado.html"
+      />
+      <br />
+      <input name="enviar" class="enviar" type="submit" value="Enviar" />
+      <input name="apagar" class="enviar" type="reset" value="apagar" />
+    </form>
+    <p class="next">
+      <a href="./px-index.html"
+        ><span style="color: blue">CONTINUE &gt; &gt; &gt;</span>
+      </a>
+    </p>
+    <br /><br />
+    <script>
+      document.getElementById("cep").addEventListener("keyup", function () {
+        var cep = this.value.replace(/\D/g, "");
+
+        if (cep.length === 8) {
+          var xhr = new XMLHttpRequest();
+          xhr.open("GET", "https://viacep.com.br/ws/" + cep + "/json/");
+          xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+              var response = JSON.parse(xhr.responseText);
+
+              document.getElementById("rua").value = response.logradouro;
+              document.getElementById("bairro").value = response.bairro;
+              document.getElementById("cidade").value = response.localidade;
+              document.getElementById("estado").value = response.uf;
+            }
+          };
+          xhr.send();
+        }
+      });
+    </script>
+  </body>
+</html>
